@@ -135,7 +135,7 @@ class construct_model(object):
             X_new[:,:,slic_idx[idx]:slic_idx[idx+1]] = np.reshape(X_temp, (X_temp.shape[0], X_temp.shape[1], X_temp.shape[2]*X_temp.shape[3]))
         return X_new
 
-    def rand_view_transform(self, X, angle1=-60, angle2=60, s1=0.9, s2=1.1):
+    def rand_view_transform(self, X, angle1=-10, angle2=10, s1=0.9, s2=1.1):
         # skeleton data X, tensor3
         # genearte rand matrix
         random.random()
